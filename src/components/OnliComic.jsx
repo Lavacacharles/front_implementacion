@@ -30,7 +30,7 @@ function OnliComic() {
         const url_deploy=`https://dbpproyecto-production.up.railway.app/comics/${id}` ;
     const token = localStorage.getItem('token');
         
-        axios.get(url_local,{
+        axios.get(url_deploy,{
             headers: {
               Authorization: `Bearer ${token}` 
             }
