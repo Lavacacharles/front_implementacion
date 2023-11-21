@@ -18,7 +18,7 @@ function Signup() {
     try {
         const url_local ="http://localhost:8080/api/auth/signup" ;
         const url_deploy="https://dbpproyecto-production.up.railway.app/api/auth/signup" ;
-        const response = await axios.post(url_local, {
+        const response = await axios.post(url_deploy, {
             nombre: username, 
             email:useremail,
             dni:Dni,
