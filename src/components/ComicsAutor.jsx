@@ -28,7 +28,7 @@ function ComicAutor() {
         const url_deploy=`https://dbpproyecto-production.up.railway.app/autor/${id}` ;
     const token = localStorage.getItem('token');
         
-        axios.get(url_local,{
+        axios.get(url_deploy,{
             headers: {
               Authorization: `Bearer ${token}` 
             }
