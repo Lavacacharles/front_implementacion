@@ -29,7 +29,7 @@ function Comentarios({ide}){
     const nombreUsuario = obtenerInformacionUsuarioDesdeToken(token);
   console.log(nombreUsuario)
 
-    const url_local_n = `http://localhost:8080/user/id/${nombreUsuario.sub}`;
+    const url_local_n = `https://dbpproyecto-production.up.railway.app/user/id/${nombreUsuario.sub}`;
   console.log(url_local_n)
 
 
@@ -44,7 +44,7 @@ function Comentarios({ide}){
       console.log('Información del usuario:', usuario);
 
       // Realizar la solicitud POST después de obtener la información del usuario
-      const url_local = "http://localhost:8080/comentario";
+      const url_local = "https://dbpproyecto-production.up.railway.app/comentario";
       const response = await axios.post(url_local, {
         contenido: form.getFieldValue('Contenido'),
         likes: 0,
