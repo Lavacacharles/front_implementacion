@@ -21,7 +21,7 @@ function Autores() {
     const url_local ="http://localhost:8080/autor" ;
     const url_deploy="https://deployjuan-production.up.railway.app/autor" ;
 
-    axios.get(url_local,{
+    axios.get(url_deploy,{
       headers: {
         Authorization: `Bearer ${token}` 
       }
