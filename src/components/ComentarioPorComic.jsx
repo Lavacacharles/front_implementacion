@@ -15,8 +15,8 @@ function ComentariosComponent({url}) {
     const token = localStorage.getItem('token');
     const url_local = `http://localhost:8080/comentario/${url}`;
     const url_deploy = "https://dbpproyecto-production.up.railway.app/autor";
-dbpproyecto-production
-    axios.get(url_local, {
+
+    axios.get(url_deploy, {
       headers: {
         Authorization: `Bearer ${token}`
       }
